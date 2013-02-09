@@ -46,7 +46,7 @@
       <% @current_checkins.each do |checkin| %>
         <li>
         O Hacker <%= checkin.name %> se programou para ficar até <%= checkin.leave %>
-        <% if !checkin.contact.empty? %> e forneceu o seguinte contato: <%= checkin.contact %><% end %>.
+        <% if checkin.contact && !checkin.contact.empty? %> e forneceu o seguinte contato: <%= checkin.contact %><% end %>.
         </li>
       <% end %>
       </ul>
