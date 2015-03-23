@@ -8,4 +8,8 @@ class StatusController < ApplicationController
     end
   end
 
+	def json
+		render :file => "status.json.erb", :content_type => 'application/json'
+	end
+
 end
