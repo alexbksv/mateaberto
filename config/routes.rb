@@ -4,8 +4,6 @@ Mateaberto::Application.routes.draw do
   
   match '/status' => 'status#show'
 
-  match '/status.json' => 'status#json'
-
   resources :checkins
 
   match '/manifest.webapp' => 'installfos#get' 
